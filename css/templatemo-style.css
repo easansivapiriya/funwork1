@@ -1,5 +1,5 @@
 /*
-	Masonry Template 
+	Masonry Template
 	http://www.templatemo.com/preview/templatemo_434_masonry
 */
 
@@ -28,11 +28,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .blue {
-	color: #6BE;
+	color: gold;
+  font-size: 180%
 }
 
 .green {
-	color: #6E6;
+	color: red;
 }
 
 main {
@@ -142,8 +143,8 @@ textarea {
 body {
     font-size: 14px;
     line-height: 24px;
-    color: #fff;
-    background-color: #000;
+    color: #004;
+    background-color: #005;
     font-family: 'robotolight';
 }
 
@@ -218,7 +219,7 @@ h5 {
 }
 
 .bg-overlay {
-    background: rgba(0,0,0,0.3);
+    background: rgba(1,0,100,0.7);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -355,10 +356,10 @@ h5 {
 
 .site-top {
     position: relative;
-    z-index: 4;
+    z-index: 1;
     background: rgba(0,0,0,0.6);
     margin-bottom: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .site-header {
@@ -424,7 +425,7 @@ h5 {
 }
 
 .post-masonry .post-thumb {
-    border: 10px solid #fff;
+    border: 10px solid red;
     overflow: hidden;
     position: relative;
 }
@@ -439,8 +440,8 @@ h5 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,0.9);
-    padding: 15px 20px;
+    background: rgba(0,0,0.9,0.9);
+    padding: 25px 40px;
 }
 
 .post-masonry .post-thumb .title-over h4 {
@@ -449,18 +450,18 @@ h5 {
 }
 
 .post-masonry .post-thumb .title-over a {
-    color: #fff;
+    color: lightblue;
 }
 
 .post-masonry .post-thumb .post-hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 70px;
+    top: 60px;
     left: 0;
     visibility: hidden;
     opacity: 0;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,10,0.9);
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
     -ms-transition: all 150ms ease-in-out;
@@ -484,7 +485,7 @@ h5 {
 }
 
 .post-masonry .post-thumb .post-hover a {
-    color: #fff !important;
+    color: green !important;
 }
 
 .post-masonry .post-thumb .post-hover i {
@@ -522,7 +523,7 @@ h5 {
 .site-footer {
     position: relative;
     z-index: 8;
-    background: rgba(0,0,0,0.6);
+    background: rgba(20,0,100,10);
     padding: 40px 0;
     margin-top: 60px;
 }
@@ -536,5 +537,5 @@ h5 {
 }
 
 .copyright-text a {
-    color: #bfbfbf;
+    color: red;
 }
