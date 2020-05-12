@@ -1,406 +1,206 @@
 <!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Music Player</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Poca - Podcast &amp; Audio Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Title -->
+  <title>my music player</title>
+  
+<script src="jquery-3.4.1.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="https://connect.soundcloud.com/sdk.js"></script>
+<script src="main.js"> </script>
+  </script>
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-	    <script src="//connect.soundcloud.com/sdk.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">  </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js">
+</head>
+<body>
+  <!-- ***** Welcome Area Start ***** -->
+  <section>
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div>
+              <!-- Welcome Text -->
+              <div class="welcome-text">
+                <h5 data-animation="fadeInUp" data-delay="100ms">G O L D E N C O L L E C T I O N O F</h5>
+                <h2 data-animation="fadeInUp" data-delay="300ms">A.R.rahman</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Welcome Area End ***** -->
 
-    </script>
-	    <script src="play.js"></script>
-      <style>
-        button {
-          background-color: #4CAF50; /* Green */
-          border: none;
-          color: white;
-          padding: 16px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          -webkit-transition-duration: 0.4s; /* Safari */
-          transition-duration: 0.4s;
-          cursor: pointer;
-        }
-        .button1 {
-  background-color: black;
-  color: black;
-  border: 2px solid #008CBA;
-}
+  <!-- ***** Latest Episodes Area Start ***** -->
+  <section class="poca-latest-epiosodes section-padding-80">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>Latest Songs</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-.button1:hover {
-  background-color: #008CBA;
-  color: white;
-}
+    <div class="container">
+      <div class="row poca-portfolio">
 
-.button2 {
-  background-color: black;
-  color: black;
-  border: 2px solid #f44336;
-}
-
-.button2:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-
-
-      </style>
-    </head>
-    <body>
-
-
-        <div id="loader-wrapper">
-            <div id="loader"></div>
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item entre wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/5.jpeg" alt="" style="height:500px; width:600px;">
+            </div>
+            <div class="poca-music-content text-center">
+              <h2>Sonnalum</h2>
+              <!-- Music Player -->
+              <button type= "button" id="start0">start</button>
+              <button>hi</button>
+              <button type = "button" id="stop0">stop</button>
+            </div>
+          </div>
         </div>
 
-        <div class="content-bg"></div>
-        <div class="bg-overlay"></div>
-
-
-        <div class="site-top">
-            <div class="site-header clearfix">
-                <div class="container">
-                    <a href="#" class="site-brand pull-left"><strong>Nice</strong> Music Player</a>
-                    <div class="social-icons pull-right">
-                        <ul>
-                            <li><a href="https://www.facebook.com/thayaparan.nitharsanan.39" class="fa fa-facebook"></a></li>
-                            <li><a href="https://twitter.com/ThayaparanNith1" class="fa fa-twitter"></a></li>
-                            <li><a href="https://dribbble.com/Nitharsanan" class="fa fa-dribbble"></a></li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item entre tutor wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/6.jpeg" alt="" style="height:500px; width:600px;">
             </div>
-            <div class="site-banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-offset-2 col-md-8 text-center">
-                            <h2>Super<span class="blue">Album</span><span class="green">Songs</span></h2>
-
-                        </div>
-                    </div>
-
-                </div>
+            <div class="poca-music-content text-center">
+              <h2>yedho yedho ondru</h2>
+              <!-- Music Player -->
+              <button id="start1">start</button>
+              <button id="stop1">stop</button>
             </div>
+          </div>
         </div>
 
-
-        <div class="main-posts">
-            <div class="container">
-                <div class="row">
-                    <div class="blog-masonry masonry-true">
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s2.jpeg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Kanavellam Neethane</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">	Lyrics - 	Dhilip Varman</span>
-                                        <h4><a href="#">	Singer(s) - 	Dhilip Varman</a></h4>
-                                       <div>
-                                         <button class="button1" type ="button" name ="button" id ="start">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s3.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Neethane Neethane</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics - Mugen Row</span>
-                                        <h4><a href="#">Singer(s) -Mugen Row </a></h4>
-                                        <div>
-                                          <button class="button1" type ="button" name ="button" id ="start1">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop1">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s4.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Ennai Kollathe</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics - Ztish</span>
-                                        <h4><a href="#">Singer - 	Kumaresh</a></h4>
-                                        <div>
-                                          <button class="button1" type ="button" name ="button" id ="start2">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop2">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s5.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Adi Ean pulla</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics -havoc brothers</span>
-                                        <h4><a href="#">Singer -havoc Brother</a></h4>
-                                       <div>
-                                         <button class="button1" type ="button" name ="button" id ="start3">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop3">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s6.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Tum Hi HO</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics - Mitoon</span>
-                                        <h4><a href="#">Singer - Arijit Singh</a></h4>
-                                      <div>
-                                        <button class="button1" type ="button" name ="button" id ="start4">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop4">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s7.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Kankal Rendu </a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics - Daiyan</span>
-                                        <h4><a href="#">Singer - Diwagar</a></h4>
-                                        <div>
-                                          <button class="button1" type ="button" name ="button" id ="start5">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop5">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s8.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Valikkirathe Valikkirathe</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-
-                                        <span class="date">Lyrics - 	Dayanshan</span>
-                                        <h4><a href="#">Singer - 	Stefija,S.Nirujan</a></h4>
-                                        <div>
-                                          <button class="button1" type ="button" name ="button" id ="start6">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop6">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s9.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">Break Up Songs</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics - HipHop Thamiza</span>
-                                        <h4><a href="#">Singer(s) -HipHop Thamiza</a></h4>
-                                      <div>
-                                        <button class="button1" type ="button" name ="button" id ="start7">start</button>
-<button class ="button2" type ="button" name ="button" id ="stop7">stop</button>
-</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post-masonry col-md-4 col-sm-6">
-                            <div class="post-thumb">
-                                <img src="images/s10.jpg" alt="">
-                                <div class="title-over">
-                                    <h4><a href="#">My Life Full Damege</a></h4>
-                                </div>
-                                <div class="post-hover text-center">
-                                    <div class="inside">
-                                        <i class="fa fa-play"></i>
-                                        <span class="date">Lyrics - 	Dinesh Danush</span>
-                                        <h4><a href="#">Singer - 	Dinesh Danush</a></h4>
-                                        <div>
-                                          <button class="button1" type ="button" name ="button" id ="start8">start</button>
-                                      <button class ="button2" type ="button" name ="button" id ="stop8">stop</button>
-                                      </div>
-                                      </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-masonry col-md-4 col-sm-6">
-                                <div class="post-thumb">
-                                    <img src="images/l1.jpg" alt="">
-                                    <div class="title-over">
-                                        <h4><a href="#">Muttu Muttu</a></h4>
-                                    </div>
-                                    <div class="post-hover text-center">
-                                        <div class="inside">
-                                            <i class="fa fa-play"></i>
-                                            <span class="date">Lyrics - 	Tee Jay</span>
-                                            <h4><a href="#">Singer - 	Teejay</a></h4>
-                                            <div>
-                                              <button class="button1" type ="button" name ="button" id ="start9">start</button>
-                                          <button class ="button2" type ="button" name ="button" id ="stop9">stop</button>
-                                          </div>
-                                          </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post-masonry col-md-4 col-sm-6">
-                                    <div class="post-thumb">
-                                        <img src="images/l1.jpg" alt="">
-                                        <div class="title-over">
-                                            <h4><a href="#">Teejay Rap</a></h4>
-                                        </div>
-                                        <div class="post-hover text-center">
-                                            <div class="inside">
-                                                <i class="fa fa-play"></i>
-                                                <span class="date">Lyrics - 	Teejay</span>
-                                                <h4><a href="#">Singer - 	Teejay</a></h4>
-                                                <div>
-                                                  <button class="button1" type ="button" name ="button" id ="start10">start</button>
-                                              <button class ="button2" type ="button" name ="button" id ="stop10">stop</button>
-                                              </div>
-                                              </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-masonry col-md-4 col-sm-6">
-                                        <div class="post-thumb">
-                                            <img src="images/l2.jpg" alt="">
-                                            <div class="title-over">
-                                                <h4><a href="#">Omiya Omiya</a></h4>
-                                            </div>
-                                            <div class="post-hover text-center">
-                                                <div class="inside">
-                                                    <i class="fa fa-play"></i>
-                                                    <span class="date">Lyrics - 	Teejay</span>
-                                                    <h4><a href="#">Singer - 	Teejay</a></h4>
-                                                    <div>
-                                                      <button class="button1" type ="button" name ="button" id ="start11">start</button>
-                                                  <button class ="button2" type ="button" name ="button" id ="stop11">stop</button>
-                                                  </div>
-                                                  </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-masonry col-md-4 col-sm-6">
-                                            <div class="post-thumb">
-                                                <img src="images/m1.jpg" alt="">
-                                                <div class="title-over">
-                                                    <h4><a href="#">MC Sai Rap</a></h4>
-                                                </div>
-                                                <div class="post-hover text-center">
-                                                    <div class="inside">
-                                                        <i class="fa fa-play"></i>
-                                                        <span class="date">Lyrics - 	MC Sai</span>
-                                                        <h4><a href="#">Singer - 	MC Sai</a></h4>
-                                                        <div>
-                                                          <button class="button1" type ="button" name ="button" id ="start12">start</button>
-                                                      <button class ="button2" type ="button" name ="button" id ="stop12">stop</button>
-                                                      </div>
-                                                      </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/28.jpg" alt="" style="height:500px; width:600px;">
             </div>
+            <div class="poca-music-content text-center">
+              <h2>singapennea</h2>
+              <!-- Music Player -->
+              <button id="start2">start</button>
+              <button id="stop2">stop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/29.jpg" alt="" style="height:500px; width:600px;">
+            </div>
+            <div class="poca-music-content text-center">
+              <h2>kanathel muththam iddal</h2>
+              <!-- Music Player -->
+              <button id="start3">start</button>
+              <button id="stop3">stop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/30.jpg" alt="" style="height:500px; width:600px;">
+            </div>
+            <div class="poca-music-content text-center">
+              <h2>munbe va</h2>
+              <!-- Music Player -->
+              <button id="start4">start</button>
+              <button id="stop4">stop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/31.jpg" alt="" style="height:500px; width:600px;">
+            </div>
+            <div class="poca-music-content text-center">
+              <h2>nensukula</h2>
+              <!-- Music Player -->
+              <button id="start5">start</button>
+              <button id="stop5">stop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/32.jpg" alt="" style="height:500px; width:600px;">
+            </div>
+            <div class="poca-music-content text-center">
+              <h2>userepokuthey</h2>
+              <!-- Music Player -->
+              <button id="start6">start</button>
+              <button id="stop6">stop</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            <div class="poca-music-thumbnail">
+              <img src="./img/bg-img/33.jpg" alt="" style="height:500px; width:600px;">
+            </div>
+            <div class="poca-music-content text-center">
+              <h2>inum konsa neram</h2>
+              <!-- Music Player -->
+              <button id="start7">start</button>
+              <button id="stop7">stop</button>
+            </div>
+          </div>
         </div>
 
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="#" class="fa fa-facebook"></a></li>
-                                <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-behance"></a></li>
-                                <li><a href="#" class="fa fa-dribbble"></a></li>
-                                <li><a href="#" class="fa fa-google-plus"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p class="copyright-text">Copyright &copy; Nitharsanan 2020
-                        | Songs by <a rel="nofollow" href="http://unsplash.com">Sound cloud</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="js/poca.bundle.js"></script>
+  <!-- Active js -->
+  <script src="js/default-assets/active.js"></script>
 
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
-
-
-        <script type="text/javascript">
-
-            $(window).load(function() {
-                $('#loader').fadeOut();
-                    $('#loader-wrapper').delay(350).fadeOut('slow');
-                $('body').delay(350).css({'overflow-y':'visible'});
-            })
-            //]]>
-        </script>
-
-    </body>
+</body>
 
 </html>
